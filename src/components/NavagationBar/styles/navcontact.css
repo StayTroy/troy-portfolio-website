@@ -1,0 +1,11 @@
+.nav-contact {
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.nav-contact:hover{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}

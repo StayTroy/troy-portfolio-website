@@ -1,0 +1,17 @@
+.nav-btn-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-btn {
+  cursor: pointer;            
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+}

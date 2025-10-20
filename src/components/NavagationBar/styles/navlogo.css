@@ -1,0 +1,46 @@
+.nav-logos-container {            
+    display: flex;             
+    align-items: center;       
+    gap: 1rem;                 
+}
+
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.25);
+}
+
+.toggle-logos {
+    position: relative;
+    width: 3.5rem;   
+    height: 3.5rem;
+}
+
+.logo-button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.logo-button img {
+  width: 3.5rem;   
+  height: 3.5rem;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo-button.sun {
+  opacity: 1;
+}
+
+body.dark-mode .logo-button.sun {
+  opacity: 0;
+}
+
+.logo-button.moon {
+  opacity: 0;
+}
+
+body.dark-mode .logo-button.moon {
+  opacity: 1;
+}

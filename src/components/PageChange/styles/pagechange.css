@@ -1,0 +1,13 @@
+@media (max-width: 1020px) {
+  .page-change {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+@media (max-height: 430px) {
+  .page-change {
+    opacity: 0;
+    z-index: 0;
+  }
+}

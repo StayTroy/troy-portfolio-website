@@ -1,0 +1,39 @@
+.footer {
+    padding: 1rem 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(191, 129, 129); 
+    color: white;
+    border-top: 3px solid rgba(0, 0, 0, 0.6); 
+    z-index: 10;
+}
+
+.footer.dark {
+  background-color: rgba(19, 17, 46, 0.6);
+  transition: background-color 0.3s;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 1.25rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-icons a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+    color: rgb(134, 130, 130);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

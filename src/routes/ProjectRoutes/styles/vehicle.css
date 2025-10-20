@@ -1,0 +1,138 @@
+.project-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0 4rem 0;
+    position: relative;
+    z-index: 10;
+}
+
+.sticky-nav-button {
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: center;
+    z-index: 100;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.sticky-nav-button:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.project-detail-header {
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+}
+
+.project-detail-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.project-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 50rem;
+    padding: 0 2rem 2rem 2rem;
+    gap: 3rem;
+}
+
+.project-detail-container section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-detail-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 2.5rem 0;
+}
+
+.project-summary p {
+    line-height: 1.8;
+    color: #666;
+    max-width: 45rem;
+    text-align: left;
+}
+
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f0f0f0;
+    border: 2px dashed #ccc;
+    color: #999;
+    font-weight: 500;
+}
+
+.image-placeholder.architecture {
+    width: 100%;
+    height: 25rem;
+    max-width: 45rem;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 14rem);
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-placeholder.screenshot {
+    width: 14rem;
+    height: 12rem;
+}
+
+.image-placeholder.team {
+    width: 100%;
+    height: 20rem;
+    max-width: 40rem;
+}
+
+.architecture-image {
+    width: 100%;
+    max-width: 45rem;
+    height: auto;
+    max-height: 30rem;
+    object-fit: contain;
+}
+
+.image-placeholder.additional {
+    width: 100%;
+    height: 18rem;
+    max-width: 40rem;
+}
+
+.video-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    font-size: 1.1rem;
+}
+
+.video-link:hover {
+    background-color: rgba(50, 50, 50, 0.8);
+}

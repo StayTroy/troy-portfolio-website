@@ -1,0 +1,65 @@
+.project-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    position: relative;
+    height: 15vh;
+    z-index: 5;
+    margin-top: 7rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.page-change-container.left .page-change {
+    position: absolute;
+    left: 10rem;          
+    top: 45%;
+    z-index: 5;
+}
+
+.page-change-container.right .page-change {
+    position: absolute;
+    right: 10rem;          
+    top: 45%;
+    z-index: 5;
+}
+
+.projects-content {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.project-item {
+    margin-bottom: 0.5rem;
+}
+
+.project-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.project-item h3 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.project-item h3 a:hover {
+    color: #18453B;
+    text-decoration: underline;
+}
+
+.project-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #666;
+    font-size: 0.95rem;
+}

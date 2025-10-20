@@ -1,0 +1,30 @@
+.project-routes-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.project-routes-wrapper > div:first-child {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.project-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0 4rem 0;
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.project-detail-page > * {
+    pointer-events: auto;
+}
