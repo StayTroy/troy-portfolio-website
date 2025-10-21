@@ -13,8 +13,7 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: "/troy-portfolio",
-  
+  base: "/troy-portfolio/",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
