@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename)
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(),react(),],
+  base: process.env.VITE_BASE_PATH || '/troy-portfolio-website',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -17,4 +18,3 @@ export default defineConfig({
   },
 })
 
-// base: process.env.VITE_BASE_PATH || '/troy-portfolio-website',
