@@ -2,6 +2,7 @@
   .page-change {
     opacity: 0;
     z-index: 0;
+    pointer-events: none;
   }
 }
 
@@ -9,5 +10,22 @@
   .page-change {
     opacity: 0;
     z-index: 0;
+    pointer-events: none;
+  }
+}
+
+@media (orientation: portrait) {
+  .page-change {
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 700px) {
+  .page-change {
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
   }
 }

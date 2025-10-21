@@ -4,8 +4,8 @@ import { cn } from "@/lib/utilis";
 import { useDarkMode } from "@/components/DarkModeContext/DarkModeContext";
 
 export const BackgroundRippleEffect = ({
-  rows = 14,
-  cols = 45,
+  rows = 50,
+  cols = 50,
   cellSize = 46,
 }: {
   rows?: number;
