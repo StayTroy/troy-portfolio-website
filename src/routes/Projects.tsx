@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Page } from '@/components/Page/Page'
 import { PageChange } from '@/components/PageChange/PageChange'
 import backward from "@/static/logos/remotebackwardoutline-svgrepo-com.svg";
@@ -16,32 +17,33 @@ export function ProjectsRoute()
                 <div className="projects-content">
                     <section className="project-item">
                         <h3>
-                            <a href="/projects/vehicle-damage-logger">
+                            <Link to="/projects/vehicle-damage-logger">
                                 Machine Learning Vehicle Damage Logger
-                            </a>
+                            </Link>
                         </h3>
                         <p>An intelligent system that uses machine learning to automatically detect and log vehicle damage, streamlining the insurance claims process.</p>
                     </section>
 
                     <section className="project-item">
                         <h3>
-                            <a href="/projects/bite-book">
+                            <Link to="/projects/bite-book">
                                 Bite Book
-                            </a>
+                            </Link>
                         </h3>
                         <p>A grocery tracking application that monitors expiration dates to help reduce grocery spending and minimize food waste.</p>
                     </section>
 
                     <section className="project-item">
                         <h3>
-                            <a href="/projects/spartan-hero">
+                            <Link to="/projects/spartan-hero">
                                 Spartan Hero
-                            </a>
+                            </Link>
                         </h3>
                         <p>A rhythm-based game inspired by Guitar Hero where players match keyboard keys with falling notes across different levels and songs.</p>
                     </section>
                 </div>
             </Page>
+                  
 
             <div className="page-change-container left">
                 <PageChange

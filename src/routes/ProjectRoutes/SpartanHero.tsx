@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import level from "@/static/project-images/Level 1.png";
 import levelchange from "@/static/project-images/Change Level.png";
 import "@/routes/ProjectRoutes/styles/hero.css"
@@ -5,9 +6,9 @@ import "@/routes/ProjectRoutes/styles/hero.css"
 export function SpartanHeroRoute() {
     return (
         <main className='project-detail-page'>
-            <a href="/projects" className="sticky-nav-button">
+            <Link to="/projects" className="sticky-nav-button">
                 Back to Projects
-            </a>
+            </Link>
 
             <div className='project-detail-header'>
                 <h1>Spartan Hero</h1>

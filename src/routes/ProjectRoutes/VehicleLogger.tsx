@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import systemdesign from "@/static/project-images/system-design.png";
 import homepage from "@/static/project-images/home-page.png";
 import newtransport from "@/static/project-images/new-transport.png";
@@ -9,9 +10,9 @@ import "@/routes/ProjectRoutes/styles/vehicle.css"
 export function VehicleDamageLoggerRoute() {
     return (
         <main className='project-detail-page'>
-            <a href="/projects" className="sticky-nav-button">
+            <Link to="/projects" className="sticky-nav-button">
                 Back to Projects
-            </a>
+            </Link>
 
             <div className='project-detail-header'>
                 <h1>Machine Learning Vehicle Damage Logger</h1>

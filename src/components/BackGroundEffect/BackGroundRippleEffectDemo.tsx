@@ -4,9 +4,9 @@ import { BackgroundRippleEffect } from "@/components/BackGroundEffect/ui/backgro
 export function BackgroundRippleEffectDemo() {
 
   return (
-    <>
+    <div className="background-wrapper">
       <BackgroundRippleEffect/>
-    </>
+    </div>
   );
 }
 

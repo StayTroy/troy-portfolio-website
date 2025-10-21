@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import homepage from "@/static/project-images/HomePic.png";
 import additem from "@/static/project-images/Add Item.png";
 import sortby from "@/static/project-images/Sort By.png";
@@ -11,9 +12,9 @@ import "@/routes/ProjectRoutes/styles/bite.css"
 export function BiteBookRoute() {
     return (
         <main className='project-detail-page'>
-            <a href="/projects" className="sticky-nav-button">
+            <Link to="/projects" className="sticky-nav-button">
                 Back to Projects
-            </a>
+            </Link>
 
             <div className='project-detail-header'>
                 <h1>BiteBook</h1>
