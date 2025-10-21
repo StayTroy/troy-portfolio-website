@@ -17,7 +17,7 @@ export function NavBar ()
             <NavLogo /> {/* controls the toggle */}
             <NavLinks />
             <NavBtn onClick={() => setOpen((prev) => !prev)}/>
-            <DropDownMenu open={open}/>
+            <DropDownMenu open={open} onClose={() => setOpen(false)}/>
         </div>
     );
 }

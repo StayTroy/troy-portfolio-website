@@ -5,9 +5,10 @@ import "@/components/DropDownMenu/styles/dropdownmenu.css"
 
 type DropDownMenuProps = {
   open: boolean;
+  onClose: () => void;
 };
 
-export function DropDownMenu({ open }: DropDownMenuProps) {
+export function DropDownMenu({ open, onClose }: DropDownMenuProps) {
 
     const { darkMode } = useDarkMode();
 
@@ -15,20 +16,21 @@ export function DropDownMenu({ open }: DropDownMenuProps) {
         <div
         className={`dropdown-menu-container ${open ? "open-menu" : ""} 
         ${darkMode ? "dark" : ""}`}>
+
             <div className="dropdown-menu">
-                <Link to="/">
+                <Link to="/" onClick={onClose}>
                     Home
                 </Link>
-                <Link to="/projects">
+                <Link to="/projects" onClick={onClose}>
                     Projects
                 </Link>
-                <Link to="/hobbies">
+                <Link to="/hobbies" onClick={onClose}>
                     Hobbies
                 </Link>
                 <a 
                     href={resume} 
                     target="_blank" 
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer" onClick={onClose}>
                     Resume
                 </a>
             </div>

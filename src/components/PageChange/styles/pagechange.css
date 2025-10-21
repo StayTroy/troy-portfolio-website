@@ -1,31 +1,8 @@
-@media (max-width: 1020px) {
+@media (max-width: 1020px),
+       (max-height: 430px),
+       (orientation: portrait),
+       (orientation: portrait) and (min-height: 700px) {
   .page-change {
-    opacity: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-}
-
-@media (max-height: 430px) {
-  .page-change {
-    opacity: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-}
-
-@media (orientation: portrait) {
-  .page-change {
-    opacity: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-}
-
-@media (orientation: portrait) and (min-height: 700px) {
-  .page-change {
-    opacity: 0;
-    z-index: 0;
-    pointer-events: none;
+    display: none;
   }
 }
