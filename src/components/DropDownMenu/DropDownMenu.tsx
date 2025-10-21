@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDarkMode } from "@/components/DarkModeContext/DarkModeContext";
-import  resume  from "@/static/resume/TroyWilliams.pdf"
+import  resume  from "@/static/resume/website resume.pdf"
 import "@/components/DropDownMenu/styles/dropdownmenu.css"
 
 type DropDownMenuProps = {
